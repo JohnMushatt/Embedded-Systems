@@ -23,13 +23,19 @@ void main(void)
 	unsigned char currKey = 0, dispSz = 3;
 	unsigned char dispThree[3];
 
+	/**
+	 * Tests
+	 */
 	card *c = malloc(sizeof(card));
 	c->face = Spade;
 	c->suit = red;
 	c->value = 0;
-	printf("Test:%d %d %d\n", c->face, c->suit, c->value);
+
+
 	WDTCTL = WDTPW | WDTHOLD; // Stop watchdog timer. Always need to stop this!!
 							  // You can then configure it properly, if desired
+
+
 	//Allocate enough memory for 52 cards on the heap
 	card *playing_deck[52];
 	init_deck(playing_deck);
@@ -43,17 +49,20 @@ void main(void)
 	// *** Intro Screen ***
 	Graphics_clearDisplay(&g_sContext); // Clear the display
 
+
+
+
 	// Write some text to the display
-	Graphics_drawStringCentered(&g_sContext, "Welcome", AUTO_STRING_LENGTH, 48,
+	Graphics_drawStringCentered(&g_sContext, "MSP430 Blackjack", AUTO_STRING_LENGTH, 48,
 			15, TRANSPARENT_TEXT);
-	Graphics_drawStringCentered(&g_sContext, "to", AUTO_STRING_LENGTH, 48, 25,
+	Graphics_drawStringCentered(&g_sContext, "Press * to start", AUTO_STRING_LENGTH, 48, 25,
 			TRANSPARENT_TEXT);
-	Graphics_drawStringCentered(&g_sContext, "ECE2049-C20!", AUTO_STRING_LENGTH,
-			48, 35, TRANSPARENT_TEXT);
+	//Graphics_drawStringCentered(&g_sContext, "ECE2049-C20!", AUTO_STRING_LENGTH,
+	//		48, 35, TRANSPARENT_TEXT);
 
 	// Draw a box around everything because it looks nice
-	Graphics_Rectangle box = { .xMin = 5, .xMax = 91, .yMin = 5, .yMax = 91 };
-	Graphics_drawRectangle(&g_sContext, &box);
+	//Graphics_Rectangle box = { .xMin = 5, .xMax = 91, .yMin = 5, .yMax = 91 };
+	//Graphics_drawRectangle(&g_sContext, &box);
 
 	// We are now done writing to the display.  However, if we stopped here, we would not
 	// see any changes on the actual LCD.  This is because we need to send our changes
@@ -69,12 +78,14 @@ void main(void)
 	{
 		// Check if any keys have been pressed on the 3x4 keypad
 		currKey = getKey();
-		if (currKey == '*')
-			BuzzerOn();
+		if (currKey == '*'){
+			start_game();
+		}
 		if (currKey == '#')
 			BuzzerOff();
 		if ((currKey >= '0') && (currKey <= '9'))
-			setLeds(currKey - 0x30);
+			cut_deck(playing_deck, (int)currKey);
+			//setLeds(currKey - 0x30);
 
 		if (currKey) {
 			dispThree[1] = currKey;

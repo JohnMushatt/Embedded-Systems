@@ -6,7 +6,12 @@
  */
 
 #include "blackjack.h"
+void start_game() {
 
+}
+int cut_deck(card **deck, int num) {
+
+}
 void init_deck(card **deck) {
 
 	/**

@@ -10,6 +10,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #define DECK_SIZE 52
+#define WIN_AMOUNT 21
 typedef struct card {
 	enum Face {
 		Heart, Diamond, Spade, Club
@@ -22,15 +23,21 @@ typedef struct card {
 	unsigned int value;
 
 } card;
+typedef struct player {
+	card **hand;
+	int balance;
+};
 //card *deck;
 
 void init_deck(card **deck);
 
-void add_card(card *card);
+void add_card(card **deck, card *card);
 
-card *remove_card(card *card);
+card *remove_card(card **deck, card *card);
 
-int check_card(card *card);
+int check_card(card **deck, card *card);
 
+int cut_deck(card **deck,int num);
+void start_game();
 card *deal_card();
 #endif /* BLACKJACK_H_ */
