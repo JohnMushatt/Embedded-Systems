@@ -25,21 +25,25 @@ void main(void)
 
 	/**
 	 * Tests
-	 */
+
 	card *c = malloc(sizeof(card));
 	c->face = Spade;
 	c->suit = red;
 	c->value = 0;
-
+	*/
 
 	WDTCTL = WDTPW | WDTHOLD; // Stop watchdog timer. Always need to stop this!!
 							  // You can then configure it properly, if desired
 
 
-	//Allocate enough memory for 52 cards on the heap
-	card *playing_deck[52];
+	//Allocate enough memory for 52 cards on the stack
+	card playing_deck[52];
 	init_deck(playing_deck);
 
+
+	//Alocate memory for 2 players
+	player_hand player;
+	player_hand dealer;
 	// Useful code starts here
 	initLeds();
 
@@ -73,16 +77,17 @@ void main(void)
 
 	dispThree[0] = ' ';
 	dispThree[2] = ' ';
-
-	while (1)    // Forever loop
+	int active_game = 0;
+	while (!active_game)    // Forever loop
 	{
 		// Check if any keys have been pressed on the 3x4 keypad
 		currKey = getKey();
-		if (currKey == '*'){
-			start_game();
+		if (active_game == 0 && currKey == '*'){
+			active_game =1;
+			start_game(playing_deck,player,dealer);
 		}
-		if (currKey == '#')
-			BuzzerOff();
+		/*
+		//Need to get inputs 0 - 15
 		if ((currKey >= '0') && (currKey <= '9'))
 			cut_deck(playing_deck, (int)currKey);
 			//setLeds(currKey - 0x30);
@@ -100,6 +105,7 @@ void main(void)
 			swDelay(1);
 			setLeds(0);
 		}
+		*/
 
 	}  // end while (1)
 }

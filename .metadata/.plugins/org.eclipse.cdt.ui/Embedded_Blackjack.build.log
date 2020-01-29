@@ -3,6 +3,27 @@
 
 "C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
  
-gmake: Nothing to be done for 'all'.
+Building file: "../blackjack.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/Embedded_Blackjack" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/Embedded_Blackjack/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --c99 --gcc --printf_support=full --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="blackjack.d_raw"  "../blackjack.c"
+"..\blackjack.h", line 20: warning #41-D: expected an identifier
+"..\blackjack.h", line 24: warning #41-D: expected an identifier
+Finished building: "../blackjack.c"
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/Embedded_Blackjack" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/Embedded_Blackjack/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --c99 --gcc --printf_support=full --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"..\blackjack.h", line 20: warning #41-D: expected an identifier
+"..\blackjack.h", line 24: warning #41-D: expected an identifier
+"../main.c", line 23: warning #179-D: variable "dispSz" was declared but never referenced
+"../main.c", line 24: warning #552-D: variable "dispThree" was set but never used
+Finished building: "../main.c"
+ 
+Building target: "Embedded_Blackjack.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --c99 --gcc --printf_support=full --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"Embedded_Blackjack.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/Embedded_Blackjack/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="Embedded_Blackjack_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "Embedded_Blackjack.out" "./blackjack.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "Embedded_Blackjack.out"
+ 
 
 **** Build Finished ****

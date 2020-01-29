@@ -1,0 +1,90 @@
+/*
+ * blackjack.c
+ *
+ *  Created on: Jan 28, 2020
+ *      Author: johnm
+ */
+
+#include "blackjack.h"
+void start_game(card &deck) {
+	//Clear display
+	Graphics_clearDisplay(&g_sContext);
+	Graphics_drawStringCentered(&g_sContext, "Please enter", AUTO_STRING_LENGTH,
+			48, 15, TRANSPARENT_TEXT);
+	Graphics_drawStringCentered(&g_sContext, "a number", AUTO_STRING_LENGTH, 48,
+			22, TRANSPARENT_TEXT);
+
+	Graphics_drawStringCentered(&g_sContext, "between 0-15!",
+	AUTO_STRING_LENGTH, 48, 30, TRANSPARENT_TEXT);
+	Graphics_flushBuffer(&g_sContext);
+	int deck_is_cut = 0;
+	unsigned char currKey = 0;
+	int digit_0 = -1;
+	int digit_1 = -1;
+	char num[2];
+	int val = 0;
+	while (!deck_is_cut) {
+		currKey = getKey();
+		if (currKey >= '0' && currKey <= '9') {
+
+			//If we are still at digit 0
+			if (digit_0 == -1) {
+				digit_0++;
+				num[0] = currKey;
+			}
+			//We are at digit 1
+			else {
+				digit_1++;
+				num[1] = currKey;
+				val = atoi(num);
+				if (val > 15) {
+					start_game(deck);
+				}
+				deck_is_cut = !deck_is_cut;
+			}
+		}
+	}
+
+}
+
+int cut_deck(card **deck, int num) {
+
+}
+void init_deck(card deck[]) {
+
+	/**
+	 * 0-12 	Red Hearts
+	 * 13-25 	Red Diamonds
+	 * 26-38	Black Spade
+	 * 39-51	Black Club
+	 */
+
+	for (unsigned int i = 0; i < 13; i++) {
+		unsigned int card_val = i + 1;
+		//Red Hearts
+
+		deck[i].suit = red;
+		deck[i]->face = Heart;
+		deck[i]->value = card_val;
+
+		//Red Diamonds
+		deck[i + 13] = (card *) malloc(sizeof(card));
+		deck[i + 13]->suit = red;
+		deck[i + 13]->face = Diamond;
+		deck[i + 13]->value = card_val;
+
+//Black Spade
+		deck[i + 26] = (card *) malloc(sizeof(card));
+		deck[i + 26]->suit = black;
+		deck[i + 26]->face = Spade;
+		deck[i + 26]->value = card_val;
+
+//Black Club
+		deck[i + 39] = (card *) malloc(sizeof(card));
+		deck[i + 39]->suit = black;
+		deck[i + 39]->face = Club;
+		deck[i + 39]->value = card_val;
+	}
+
+}
+
