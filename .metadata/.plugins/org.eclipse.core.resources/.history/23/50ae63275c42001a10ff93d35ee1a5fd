@@ -1,0 +1,47 @@
+/*
+ * blackjack.c
+ *
+ *  Created on: Jan 28, 2020
+ *      Author: johnm
+ */
+
+#include "blackjack.h"
+
+void init_deck(card **deck) {
+
+	/**
+	 * 0-12 	Red Hearts
+	 * 13-26 	Red Diamonds
+	 * 27-40	Black Spade
+	 * 41-51	Black Club
+	 */
+
+	for (unsigned int i = 0; i < 12; i++) {
+		unsigned int card_val = i + 1;
+		//Red Hearts
+		deck[i] = (card *) malloc(sizeof(card));
+		deck[i]->suit = red;
+		deck[i]->face = Heart;
+		deck[i]->value = card_val;
+
+		//Red Diamonds
+		deck[i + 13] = (card *) malloc(sizeof(card));
+		deck[i + 13]->suit = red;
+		deck[i + 13]->face = Heart;
+		deck[i + 13]->value = card_val + 13;
+
+		//Black Spade
+		deck[i + 26] = (card *) malloc(sizeof(card));
+		deck[i + 26]->suit = black;
+		deck[i + 26]->face = Spade;
+		deck[i + 26]->value = card_val + 26;
+
+		//Black Spade
+		deck[i + 39] = (card *) malloc(sizeof(card));
+		deck[i + 39]->suit = black;
+		deck[i + 39]->face = Spade;
+		deck[i + 39]->value = card_val + 39;
+	}
+
+}
+

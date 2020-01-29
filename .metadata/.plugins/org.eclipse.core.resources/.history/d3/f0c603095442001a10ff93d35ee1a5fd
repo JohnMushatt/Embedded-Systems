@@ -1,0 +1,14 @@
+/*
+ * blackjack.c
+ *
+ *  Created on: Jan 28, 2020
+ *      Author: johnm
+ */
+
+#include "blackjack.h"
+
+
+
+card *init_deck() {
+	*deck = (deck *)(malloc(sizeof(deck)*52));
+}

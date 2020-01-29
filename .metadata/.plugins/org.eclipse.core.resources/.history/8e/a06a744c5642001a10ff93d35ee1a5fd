@@ -1,0 +1,25 @@
+/*
+ * blackjack.c
+ *
+ *  Created on: Jan 28, 2020
+ *      Author: johnm
+ */
+
+#include "blackjack.h"
+
+void init_deck(card *deck) {
+
+	for (unsigned int i = 0; i < 12; i++) {
+
+		//Red Hearts
+		deck[i].color = red;
+		deck[i].face = Heart;
+		deck[i].value = i;
+		//Red Diamonds
+		deck[i + 1 * 2].color = red;
+		deck[i + 1 * 2].face = Heart;
+		deck[i + 1 * 2].value = i;
+	}
+
+}
+

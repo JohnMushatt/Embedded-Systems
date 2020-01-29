@@ -1,0 +1,78 @@
+
+**** Build of configuration Debug for project Emedded_Blackjack ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k -j 6 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded Systems/Emedded_Blackjack" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power="all" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"C:/ti/ccs910/ccs/ccs_base/msp430/include/msp430.h", line 1916: fatal error #35: #error directive: "Failed to match a default include file"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+Building file: "../peripherals.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded Systems/Emedded_Blackjack" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power="all" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="peripherals.d_raw"  "../peripherals.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'peripherals.obj' failed
+"C:/ti/ccs910/ccs/ccs_base/msp430/include/msp430.h", line 1916: fatal error #35: #error directive: "Failed to match a default include file"
+1 catastrophic error detected in the compilation of "../peripherals.c".
+Compilation terminated.
+gmake: *** [peripherals.obj] Error 1
+Building file: "../LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded Systems/Emedded_Blackjack" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power="all" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.d_raw" --obj_directory="LcdDriver"  "../LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.c"
+ 
+>> Compilation failure
+LcdDriver/subdir_rules.mk:9: recipe for target 'LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj' failed
+"../LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.c", line 44: fatal error #1965: cannot open source file "grlib.h"
+1 catastrophic error detected in the compilation of "../LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.c".
+Compilation terminated.
+gmake: *** [LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj] Error 1
+Building file: "../LcdDriver/Sharp96x96.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded Systems/Emedded_Blackjack" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power="all" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="LcdDriver/Sharp96x96.d_raw" --obj_directory="LcdDriver"  "../LcdDriver/Sharp96x96.c"
+ 
+>> Compilation failure
+LcdDriver/subdir_rules.mk:9: recipe for target 'LcdDriver/Sharp96x96.obj' failed
+"C:/ti/ccs910/ccs/ccs_base/msp430/include/msp430.h", line 1916: fatal error #35: #error directive: "Failed to match a default include file"
+1 catastrophic error detected in the compilation of "../LcdDriver/Sharp96x96.c".
+Compilation terminated.
+gmake: *** [LcdDriver/Sharp96x96.obj] Error 1
+Building file: "../fonts/fontfixed6x8.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded Systems/Emedded_Blackjack" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power="all" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="fonts/fontfixed6x8.d_raw" --obj_directory="fonts"  "../fonts/fontfixed6x8.c"
+ 
+>> Compilation failure
+fonts/subdir_rules.mk:9: recipe for target 'fonts/fontfixed6x8.obj' failed
+"../fonts/fontfixed6x8.c", line 32: fatal error #1965: cannot open source file "grlib.h"
+1 catastrophic error detected in the compilation of "../fonts/fontfixed6x8.c".
+Compilation terminated.
+gmake: *** [fonts/fontfixed6x8.obj] Error 1
+Building file: "../images/LPRocket_96x37.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded Systems/Emedded_Blackjack" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power="all" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="images/LPRocket_96x37.d_raw" --obj_directory="images"  "../images/LPRocket_96x37.c"
+ 
+>> Compilation failure
+images/subdir_rules.mk:9: recipe for target 'images/LPRocket_96x37.obj' failed
+"../images/LPRocket_96x37.c", line 34: fatal error #1965: cannot open source file "grlib.h"
+1 catastrophic error detected in the compilation of "../images/LPRocket_96x37.c".
+Compilation terminated.
+gmake: *** [images/LPRocket_96x37.obj] Error 1
+Building file: "../images/TI_Logo_69x64.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded Systems/Emedded_Blackjack" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power="all" -g --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="images/TI_Logo_69x64.d_raw" --obj_directory="images"  "../images/TI_Logo_69x64.c"
+ 
+>> Compilation failure
+images/subdir_rules.mk:9: recipe for target 'images/TI_Logo_69x64.obj' failed
+"../images/TI_Logo_69x64.c", line 34: fatal error #1965: cannot open source file "grlib.h"
+1 catastrophic error detected in the compilation of "../images/TI_Logo_69x64.c".
+Compilation terminated.
+gmake: *** [images/TI_Logo_69x64.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
