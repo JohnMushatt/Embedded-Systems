@@ -26,24 +26,24 @@ void main(void)
 	/**
 	 * Tests
 
-	card *c = malloc(sizeof(card));
-	c->face = Spade;
-	c->suit = red;
-	c->value = 0;
-	*/
+	 card *c = malloc(sizeof(card));
+	 c->face = Spade;
+	 c->suit = red;
+	 c->value = 0;
+	 */
 
 	WDTCTL = WDTPW | WDTHOLD; // Stop watchdog timer. Always need to stop this!!
 							  // You can then configure it properly, if desired
-
 
 	//Allocate enough memory for 52 cards on the stack
 	card playing_deck[52];
 	init_deck(playing_deck);
 
-
 	//Alocate memory for 2 players
 	player_hand player;
+	init_hand(player);
 	player_hand dealer;
+	init_hand(dealer);
 	// Useful code starts here
 	initLeds();
 
@@ -53,13 +53,11 @@ void main(void)
 	// *** Intro Screen ***
 	Graphics_clearDisplay(&g_sContext); // Clear the display
 
-
-
-
 	// Write some text to the display
-	Graphics_drawStringCentered(&g_sContext, "MSP430 Blackjack", AUTO_STRING_LENGTH, 48,
-			15, TRANSPARENT_TEXT);
-	Graphics_drawStringCentered(&g_sContext, "Press * to start", AUTO_STRING_LENGTH, 48, 25,
+	Graphics_drawStringCentered(&g_sContext, "MSP430 Blackjack",
+			AUTO_STRING_LENGTH, 48, 15, TRANSPARENT_TEXT);
+	Graphics_drawStringCentered(&g_sContext, "Press * to start",
+			AUTO_STRING_LENGTH, 48, 25,
 			TRANSPARENT_TEXT);
 	//Graphics_drawStringCentered(&g_sContext, "ECE2049-C20!", AUTO_STRING_LENGTH,
 	//		48, 35, TRANSPARENT_TEXT);
@@ -82,30 +80,30 @@ void main(void)
 	{
 		// Check if any keys have been pressed on the 3x4 keypad
 		currKey = getKey();
-		if (active_game == 0 && currKey == '*'){
-			active_game =1;
-			start_game(playing_deck,player,dealer);
+		if (active_game == 0 && currKey == '*') {
+			active_game = 1;
+			start_game(playing_deck, &player, &dealer);
 		}
 		/*
-		//Need to get inputs 0 - 15
-		if ((currKey >= '0') && (currKey <= '9'))
-			cut_deck(playing_deck, (int)currKey);
-			//setLeds(currKey - 0x30);
+		 //Need to get inputs 0 - 15
+		 if ((currKey >= '0') && (currKey <= '9'))
+		 cut_deck(playing_deck, (int)currKey);
+		 //setLeds(currKey - 0x30);
 
-		if (currKey) {
-			dispThree[1] = currKey;
-			// Draw the new character to the display
-			Graphics_drawStringCentered(&g_sContext, dispThree, dispSz, 48, 55,
-					OPAQUE_TEXT);
+		 if (currKey) {
+		 dispThree[1] = currKey;
+		 // Draw the new character to the display
+		 Graphics_drawStringCentered(&g_sContext, dispThree, dispSz, 48, 55,
+		 OPAQUE_TEXT);
 
-			// Refresh the display so it shows the new data
-			Graphics_flushBuffer(&g_sContext);
+		 // Refresh the display so it shows the new data
+		 Graphics_flushBuffer(&g_sContext);
 
-			// wait awhile before clearing LEDs
-			swDelay(1);
-			setLeds(0);
-		}
-		*/
+		 // wait awhile before clearing LEDs
+		 swDelay(1);
+		 setLeds(0);
+		 }
+		 */
 
 	}  // end while (1)
 }

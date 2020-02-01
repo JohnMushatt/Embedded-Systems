@@ -25,6 +25,7 @@ typedef struct card {
 	enum Suit suit;
 	unsigned int value;
 	int in_play;
+	int in_hand;
 
 } card;
 typedef struct player {
@@ -38,11 +39,14 @@ void init_deck(card deck[]);
 
 void add_card(card deck[], card *card);
 
-card *remove_card(card deck[]);
+void deal_card(card deck[], player_hand *hand);
 
 int check_card(card deck[], card *card);
 
-int *cut_deck(int num);
-int *start_game(card deck[],player_hand player, player_hand dealer);
-card *deal_card();
+void cut_deck(card deck[], int num);
+
+void init_hand(player_hand hand);
+void start_game(card deck[], player_hand *player, player_hand *dealer);
+
+
 #endif /* BLACKJACK_H_ */

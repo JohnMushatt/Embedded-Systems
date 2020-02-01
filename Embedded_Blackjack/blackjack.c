@@ -6,7 +6,7 @@
  */
 
 #include "blackjack.h"
-int *start_game(card deck[],player_hand player, player_hand dealer) {
+void start_game(card deck[], player_hand *player, player_hand *dealer) {
 	//Clear display
 	Graphics_clearDisplay(&g_sContext);
 	Graphics_drawStringCentered(&g_sContext, "Please enter", AUTO_STRING_LENGTH,
@@ -38,26 +38,49 @@ int *start_game(card deck[],player_hand player, player_hand dealer) {
 				num[1] = currKey;
 				val = atoi(num);
 				if (val > 15) {
-					start_game(deck);
+					start_game(deck, &player, &dealer);
 				}
 				deck_is_cut = !deck_is_cut;
 			}
 		}
 	}
-	int *dealing_order = cut_deck(val);
+	//int *dealing_order = cut_deck(val);
 
-	for(unsigned int i = 0; i < 2; i++) {
+	for (unsigned int i = 0; i < 2; i++) {
 		//Remove card at top of deck or smallest index in index_list
-		card player_card = remove_card(deck);
-		player.hand[i] = player_card;
-		card dealer_card = remove_card(deck);
-		dealer.hand[i] = dealer_card;
+		deal_card(deck, player);
+		//player.hand[i] = player_card;
+		deal_card(deck, dealer);
+		//dealer.hand[i] = dealer_card;
 	}
-	return dealing_order;
 
 }
+void deal_card(card deck[], player_hand *hand) {
 
-int *cut_deck(int num) {
+	for (unsigned int i = 0; i < 52; i++) {
+		/**
+		 * 0 indicates that that card has already been dealt
+		 */
+		if (!deck[i].in_play) {
+			deck[i].in_play = 1;
+			/**
+			 * Value of !0 for in_hand indicates a spot to put a card in
+			 */
+			for (unsigned int j = 0; j < 14; j++) {
+				if (!hand->hand[j].in_hand) {
+					deck[i].in_hand=1;
+					hand->hand[j] = deck[i];
+					//hand->hand[j].in_hand = 1;
+
+					j =14;
+					i= 52;
+				}
+			}
+		}
+	}
+}
+
+void cut_deck(card deck[], int num) {
 	//Seed rng
 	srand(num);
 	int *index_list = malloc(sizeof(int) * 52);
@@ -83,8 +106,17 @@ int *cut_deck(int num) {
 		}
 		seen = 0;
 	}
-	return index_list;
 }
+
+void init_hand(player_hand hand) {
+	hand.balance= 0;
+	hand.score = 0;
+	for (unsigned int i = 0; i < 14; i++) {
+		hand.hand[i].in_hand = 0;
+		hand.hand[i].in_play = 0;
+	}
+}
+
 void init_deck(card deck[]) {
 
 	/**
