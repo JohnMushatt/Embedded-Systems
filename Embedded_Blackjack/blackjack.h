@@ -14,6 +14,12 @@
 
 #define DECK_SIZE 52
 #define WIN_AMOUNT 21
+
+
+
+void swDelay(char numLoops);
+
+
 typedef struct card {
 	enum Face {
 		Heart, Diamond, Spade, Club
@@ -32,21 +38,48 @@ typedef struct player {
 	card hand[14];
 	int score;
 	int balance;
+	int num_cards;
 } player_hand;
-//card *deck;
+//Stack allocated deck
+card playing_deck[52];
+player_hand player;
+player_hand dealer;
+int current_pot;
+int game_over;
 
-void init_deck(card deck[]);
+/*
+ * Card and deck related functions
+ */
+void init_deck();
 
-void add_card(card deck[], card *card);
+void deal_card(int choice);
 
-void deal_card(card deck[], player_hand *hand);
+void cut_deck(int num);
 
-int check_card(card deck[], card *card);
+void init_hands();
 
-void cut_deck(card deck[], int num);
+void play_round();
+//--------------------------
+void start_game();
 
-void init_hand(player_hand hand);
-void start_game(card deck[], player_hand *player, player_hand *dealer);
+void restart_game();
+/*
+ * Graphics related functions
+ */
+void display_game();
 
 
+int get_card_value(int val);
+
+void player_lose();
+char *card_as_string(card card);
+
+/*
+ * Betting related functions
+ */
+void make_bet();
+int cpu_bet(int player_bet);
+void bet_prompt();
+void display_bets(int player_bet, int dealer_bet);
+void display_dealer_hand();
 #endif /* BLACKJACK_H_ */
