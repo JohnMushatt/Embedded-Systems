@@ -59,7 +59,7 @@ void main(void)
 	dispThree[2] = ' ';
 	int active_game = 0;
 	int new_move = 0;
-	int bet_made = 0;
+	bet_made = 0;
 	while (!game_over)    // Forever loop
 	{
 		// Check if any keys have been pressed on the 3x4 keypad

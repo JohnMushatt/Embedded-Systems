@@ -42,11 +42,12 @@ typedef struct player {
 } player_hand;
 //Stack allocated deck
 card playing_deck[52];
+int deal_order[52];
 player_hand player;
 player_hand dealer;
 int current_pot;
 int game_over;
-
+int bet_made;
 /*
  * Card and deck related functions
  */
@@ -67,11 +68,13 @@ void restart_game();
  * Graphics related functions
  */
 void display_game();
-
+void prompt_deal();
 
 int get_card_value(int val);
 
 void player_lose();
+
+void player_win();
 char *card_as_string(card card);
 
 /*
