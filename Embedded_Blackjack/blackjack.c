@@ -49,6 +49,7 @@ void start_game() {
 				if (val > 15) {
 					start_game();
 				}
+				active_game = 1;
 				deck_is_cut = !deck_is_cut;
 				Graphics_clearDisplay(&g_sContext);
 				Graphics_drawStringCentered(&g_sContext, "Game starting",
@@ -63,6 +64,20 @@ void start_game() {
 			}
 		} else if (currKey == '*') {
 			restart_game();
+			deck_is_cut = 0;
+			currKey = 0;
+			digit_0 = -1;
+			digit_1 = -1;
+			val = 0;
+			Graphics_clearDisplay(&g_sContext);
+			Graphics_drawStringCentered(&g_sContext, "Please enter",
+			AUTO_STRING_LENGTH, 48, 15, TRANSPARENT_TEXT);
+			Graphics_drawStringCentered(&g_sContext, "a number",
+			AUTO_STRING_LENGTH, 48, 22, TRANSPARENT_TEXT);
+
+			Graphics_drawStringCentered(&g_sContext, "between 0-15!",
+			AUTO_STRING_LENGTH, 48, 30, TRANSPARENT_TEXT);
+			Graphics_flushBuffer(&g_sContext);
 		}
 	}
 	cut_deck(val);
@@ -77,7 +92,15 @@ void start_game() {
 
 }
 void restart_game() {
-
+	init_deck();
+	init_hands();
+	current_pot = 0;
+	bet_made = 0;
+	game_over = 0;
+	active_game = 0;
+	for (unsigned int i = 0; i < 52; i++) {
+		deal_order[i] = -1;
+	}
 }
 /**
  * Display the state of the game
@@ -122,13 +145,15 @@ void display_game() {
 
 }
 void display_dealer_hand() {
+	Graphics_clearDisplay(&g_sContext);
+
 	Graphics_drawString(&g_sContext, "Dealers Hand:",
-	AUTO_STRING_LENGTH, 0, 35, TRANSPARENT_TEXT);
+	AUTO_STRING_LENGTH, 0, 22, TRANSPARENT_TEXT);
 	char *card_string;
 	for (unsigned int i = 0; i < dealer.num_cards; i++) {
 		card_string = card_as_string(dealer.hand[i]);
 		Graphics_drawString(&g_sContext, card_string,
-		AUTO_STRING_LENGTH, i * 20, 22, TRANSPARENT_TEXT);
+		AUTO_STRING_LENGTH, i * 20, 35, TRANSPARENT_TEXT);
 		//Graphics_flushBuffer(&g_sContext);
 		//free(card_string);
 	}
@@ -169,6 +194,9 @@ void make_bet() {
 				current_pot += bet;
 			}
 
+		} else if (currKey == '*') {
+			restart_game();
+			bet_made = 0;
 		}
 	}
 
@@ -178,11 +206,11 @@ void make_bet() {
 void prompt_deal() {
 	Graphics_clearDisplay(&g_sContext);
 
-		Graphics_drawString(&g_sContext, "Draw a card: 1",
-		AUTO_STRING_LENGTH, 0, 16, TRANSPARENT_TEXT);
-		Graphics_drawString(&g_sContext, "Hold: #",
-		AUTO_STRING_LENGTH, 0, 24, TRANSPARENT_TEXT);
-		Graphics_flushBuffer(&g_sContext);
+	Graphics_drawString(&g_sContext, "Draw a card: 1",
+	AUTO_STRING_LENGTH, 0, 16, TRANSPARENT_TEXT);
+	Graphics_drawString(&g_sContext, "Hold: #",
+	AUTO_STRING_LENGTH, 0, 24, TRANSPARENT_TEXT);
+	Graphics_flushBuffer(&g_sContext);
 }
 void play_round() {
 
@@ -190,6 +218,7 @@ void play_round() {
 	int action_made = 0;
 	char currKey;
 	int player_turn_over = 0;
+	int player_hold = 0;
 	while (!action_made) {
 		currKey = getKey();
 		if (currKey == '1') {
@@ -198,28 +227,49 @@ void play_round() {
 				player_lose();
 				return;
 			}
-			else if(player.score==21) {
-				player_win();
-			}
 			player_turn_over = 1;
 			display_game();
+			swDelay(5);
+			prompt_deal();
+
 		}
 		//Hold
 		else if (currKey == '#') {
-			action_made = 1;
+			player_hold = 1;
+
+			//action_made = 1;
 		} else if (currKey == '*') {
 			restart_game();
+			return;
 		}
 		//Dealer's turn
 		//If the dealer can draw a card
-		if (player_turn_over) {
+		if (player_turn_over || player_hold) {
+			swDelay(5);
+			//Check if dealer can draw a card
 			if (player.score <= 21 && dealer.score < 17) {
 				deal_card(1);
-			} else {
-				display_dealer_hand();
+			}
+			//If dealer did not bust, but can't draw anymore cards, display and check who wins
+			else {
+
+				action_made = 1;
+				swDelay(3);
+				if (player.score >= dealer.score) {
+					player_win();
+				} else {
+					display_dealer_hand();
+
+					player_lose();
+				}
+			}
+			//Check if dealer goes bust
+			if (dealer.score > 21) {
+				swDelay(3);
+				player_win();
+				return;
 			}
 			player_turn_over = 0;
-			prompt_deal();
 		}
 
 	}
@@ -279,20 +329,22 @@ void player_lose() {
 	swDelay(3);
 	Graphics_clearDisplay(&g_sContext);
 	game_over = 0;
-	bet_made=0;
+	bet_made = 0;
 
 }
 void player_win() {
+	display_dealer_hand();
+	swDelay(5);
 	Graphics_clearDisplay(&g_sContext);
 	Graphics_drawStringCentered(&g_sContext, "You won!",
-	AUTO_STRING_LENGTH, 30, 30, TRANSPARENT_TEXT);
-	Graphics_drawString(&g_sContext, "Balance increased by:",
-	AUTO_STRING_LENGTH, 0, 40, TRANSPARENT_TEXT);
-	char *balance = (char *) malloc(sizeof(char)*2);
+	AUTO_STRING_LENGTH, 50, 30, TRANSPARENT_TEXT);
+	Graphics_drawString(&g_sContext, "Balance increased",
+	AUTO_STRING_LENGTH, 0, 50, TRANSPARENT_TEXT);
+	char *balance = (char *) malloc(sizeof(char) * 2);
 
-	sprintf(balance,"%d",current_pot);
-	Graphics_drawString(&g_sContext, balance,
-		AUTO_STRING_LENGTH, 60, 45, TRANSPARENT_TEXT);
+	sprintf(balance, "%d", current_pot);
+	Graphics_drawStringCentered(&g_sContext, balance,
+	AUTO_STRING_LENGTH, 50, 65, TRANSPARENT_TEXT);
 	Graphics_flushBuffer(&g_sContext);
 	BuzzerOn();
 	swDelay(3);
@@ -369,8 +421,10 @@ void deal_card(int num) {
 					if (!player.hand[j].in_hand) {
 						playing_deck[next_index].in_hand = 1;
 						player.hand[j].face = playing_deck[next_index].face;
-						player.hand[j].in_hand = playing_deck[next_index].in_hand;
-						player.hand[j].in_play = playing_deck[next_index].in_play;
+						player.hand[j].in_hand =
+								playing_deck[next_index].in_hand;
+						player.hand[j].in_play =
+								playing_deck[next_index].in_play;
 						player.hand[j].suit = playing_deck[next_index].suit;
 						player.hand[j].value = playing_deck[next_index].value;
 
@@ -383,8 +437,10 @@ void deal_card(int num) {
 					if (!dealer.hand[j].in_hand) {
 						playing_deck[next_index].in_hand = 1;
 						dealer.hand[j].face = playing_deck[next_index].face;
-						dealer.hand[j].in_hand = playing_deck[next_index].in_hand;
-						dealer.hand[j].in_play = playing_deck[next_index].in_play;
+						dealer.hand[j].in_hand =
+								playing_deck[next_index].in_hand;
+						dealer.hand[j].in_play =
+								playing_deck[next_index].in_play;
 						dealer.hand[j].suit = playing_deck[next_index].suit;
 						dealer.hand[j].value = playing_deck[next_index].value;
 						dealer.score += get_card_value(dealer.hand[j].value);
@@ -400,7 +456,7 @@ void deal_card(int num) {
 }
 
 void cut_deck(int num) {
-	for(unsigned int i = 0; i < 52; i++) {
+	for (unsigned int i = 0; i < 52; i++) {
 		deal_order[i] = -1;
 	}
 	//Seed rng

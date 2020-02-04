@@ -57,7 +57,6 @@ void main(void)
 
 	dispThree[0] = ' ';
 	dispThree[2] = ' ';
-	int active_game = 0;
 	int new_move = 0;
 	bet_made = 0;
 	while (!game_over)    // Forever loop
@@ -65,7 +64,7 @@ void main(void)
 		// Check if any keys have been pressed on the 3x4 keypad
 		currKey = getKey();
 		if (active_game == 0 && currKey == '*') {
-			active_game = 1;
+			//active_game = 1;
 			start_game();
 			display_game();
 		}

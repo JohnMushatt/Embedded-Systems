@@ -48,6 +48,7 @@ player_hand dealer;
 int current_pot;
 int game_over;
 int bet_made;
+int active_game;
 /*
  * Card and deck related functions
  */
