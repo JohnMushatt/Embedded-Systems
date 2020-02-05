@@ -20,7 +20,7 @@
 		<item value="true" key="CCS.IMPORT_FROM_ARCHIVE"/>
 		<item value="true" key="CCS.COPY_INTO_WORKSPACE"/>
 		<item value="false" key="CCS.IMPORT_REFERENCED_PROJECTS"/>
-		<item value="C:\Users\johnm\Downloads\ece2049_demo_ccs91_C20.zip" key="CCS.BROWSE_ZIPS_FILTER"/>
+		<item value="C:\Users\johnm\Desktop\Embedded Systems\ece2049_demo_ccs91_C20.zip" key="CCS.BROWSE_ZIPS_FILTER"/>
 	</section>
 	<section name="com.ti.ccstudio.project.ui.internal.preferences.DynamicPreferencePageManager">
 	</section>
