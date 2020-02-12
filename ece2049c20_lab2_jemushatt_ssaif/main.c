@@ -40,54 +40,81 @@ void main(void)
 	Graphics_drawStringCentered(&g_sContext, "Welcome", AUTO_STRING_LENGTH, 48,
 			15, TRANSPARENT_TEXT);
 	Graphics_flushBuffer(&g_sContext);
-	Graphics_clearDisplay(&g_sContext);
-	Graphics_drawStringCentered(&g_sContext, "Time start", AUTO_STRING_LENGTH,
-			30, 30,
-			TRANSPARENT_TEXT);
-	Graphics_flushBuffer(&g_sContext);
+	//Graphics_clearDisplay(&g_sContext);
+	/*
+	 Graphics_drawStringCentered(&g_sContext, "Time start", AUTO_STRING_LENGTH,
+	 30, 30,
+	 TRANSPARENT_TEXT);
+	 Graphics_flushBuffer(&g_sContext);
 
-	timer_on = 1;
-	runtimerA2();
+	 timer_on = 1;
+	 runtimerA2();
+	 char timer_as_string[10];
+	 while (timer <= 200) {
+	 if (timer % 100 == 0) {
+	 sprintf(timer_as_string, "%d", timer / 100);
+	 Graphics_clearDisplay(&g_sContext);
+	 Graphics_drawString(&g_sContext, timer_as_string,
+	 AUTO_STRING_LENGTH, 30, 30,
+	 OPAQUE_TEXT);
+	 Graphics_flushBuffer(&g_sContext);
+	 }
+	 }
 
-	while (timer <= 1024) {
-		Graphics_clearDisplay(&g_sContext);
-		Graphics_drawStringCentered(&g_sContext, "Time over",
-				AUTO_STRING_LENGTH, 30, 30,
-				TRANSPARENT_TEXT);
-		Graphics_flushBuffer(&g_sContext);
-	}
-	stoptimerA2(1);
-	unsigned char dispThree[3];
-	dispThree[0] = ' ';
-	dispThree[2] = ' ';
-	char test = BIT0 | BIT1;
-	configUserLED(test);
-	swDelay(2);
-	test = BIT1;
-	configUserLED(test);
-	swDelay(2);
+	 stoptimerA2(1);
+	 Graphics_clearDisplay(&g_sContext);
+	 Graphics_drawString(&g_sContext, "Timer Over!",
 
-	test = BIT0;
-	configUserLED(test);
-	swDelay(2);
-	setLeds(0);
+	 AUTO_STRING_LENGTH, 30, 30,
+	 OPAQUE_TEXT);
+	 Graphics_flushBuffer(&g_sContext);
+	 unsigned char dispThree[3];
+	 dispThree[0] = ' ';
+	 dispThree[2] = ' ';
+	 char test = BIT0 | BIT1;
+	 configUserLED(test);
+	 swDelay(2);
+	 test = BIT1;
+	 configUserLED(test);
+	 swDelay(2);
+
+	 test = BIT0;
+	 configUserLED(test);
+	 swDelay(2);
+	 setLeds(0);
+	 */
 	unsigned char button;
+	Note test_note_1;
+	test_note_1.duration = 2;
+	test_note_1.pitch = 200;
 
+	Note test_note_2;
+	test_note_2.duration = 1;
+	test_note_2.pitch = 50;
+	init_song();
 	while (1)    // Forever loop
 	{
 
-		button = get_pressed_button();
-		if (button == '1' || button == '2' || button == '3' || button == '4') {
-			dispThree[1] = button;
+		button = getKey();
+		if (button == '*') {
+			start_game();
+			/*
+			 dispThree[1] = button;
 
-			Graphics_clearDisplay(&g_sContext);
-			Graphics_drawStringCentered(&g_sContext, dispThree, 3, 30, 30,
-			TRANSPARENT_TEXT);
-			Graphics_flushBuffer(&g_sContext);
+			 Graphics_clearDisplay(&g_sContext);
+			 Graphics_drawStringCentered(&g_sContext, dispThree, 3, 30, 30,
+			 TRANSPARENT_TEXT);
+			 Graphics_flushBuffer(&g_sContext);
+			 */
 		}
-		unsigned char val = get_pressed_button_hex();
-		configLabBoardLED((char) val);
-		configUserLED(val);
+		if (game_started) {
+			if (current_note_index <= 6) {
+				play_note(song[current_note_index]);
+			}
+		}
+		//unsigned char val = get_pressed_button_hex();
+		//configLabBoardLED((char) val);
+		//configUserLED(val);
 	}  // end while (1)
 }
 

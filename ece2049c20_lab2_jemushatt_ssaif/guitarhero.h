@@ -8,23 +8,27 @@
 #ifndef GUITARHERO_H_
 #define GUITARHERO_H_
 #include <msp430.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "peripherals.h"
 
 /**
- * 5 byte structure
+ * 4 byte structure
  * 2 bytes for pitch b/c 16-bit unsigned int is 16/8 =2  bytes
  * 2 bytes for duration b/c 16-bit unsigned int is 16/8 =2  bytes
- * 1 byte for LED b.c 8-bit unsigned char is 1 byte
  * maybe some additional padding
  */
 typedef struct _Note {
 	unsigned int pitch; // 2 bytes
 	unsigned int duration; // 2 bytes
-	unsigned char LED; // 1 byte
 } Note;
 Note song[100];
+unsigned int current_note_index;
 unsigned int timer;
 int timer_on;
 unsigned int leap_cnt;
+
+int game_started;
 /**
  *  8 + N*5 byte structure
  *  8 Bytes for pointer to array of notes
@@ -36,7 +40,13 @@ typedef struct _Song {
 
 } Song;
 */
+/*
+ * Game logic
+ */
 
+void start_game();
+void init_song();
+void play_note(Note note);
 void runtimerA2(void);
 void stoptimerA2(int reset);
 void init_selector_buttons();

@@ -69,7 +69,7 @@ void configUserLED(char inbits) {
 
 	P4OUT &= ~(BIT7);
 	P1OUT &= ~(BIT0);
-	unsigned char mask = 0;
+	//unsigned char mask = 0;
 	if (inbits & BIT0) {
 		P1OUT |= BIT0;
 	}
@@ -121,6 +121,88 @@ void stoptimerA2(int reset) {
 	TA2CCTL0 &= ~CCIE; // TA2CCR0 interrupt disabled
 	if (reset)
 		timer = 0;
+}
+
+void start_game() {
+	Graphics_clearDisplay(&g_sContext);
+	current_note_index=0;
+	timer_on = 1;
+	runtimerA2();
+	char timer_as_string[2];
+	int seconds = 0;
+	game_started = 1;
+	while (timer <= 300) {
+		if (timer % 100 == 0) {
+			seconds = (300 - timer) / 100;
+			sprintf(timer_as_string, "%d", seconds);
+			Graphics_clearDisplay(&g_sContext);
+			Graphics_drawString(&g_sContext, timer_as_string,
+			AUTO_STRING_LENGTH, 30, 30, OPAQUE_TEXT);
+			Graphics_flushBuffer(&g_sContext);
+			if (seconds == 3) {
+				configUserLED(BIT0);
+			} else if (seconds == 2) {
+				configUserLED(BIT1);
+			} else if (seconds == 1) {
+				configUserLED(BIT0);
+			} else if (seconds == 0) {
+				configUserLED(BIT0 | BIT1);
+			}
+		}
+	}
+	timer_on = 0;
+	stoptimerA2(1);
+	configUserLED(0);
+
+}
+void play_note(Note note) {
+
+	// Initialize PWM output on P3.5, which corresponds to TB0.5
+	    P3SEL |= BIT5; // Select peripheral output mode for P3.5
+	    P3DIR |= BIT5;
+
+	    TB0CTL  = (TBSSEL__ACLK|ID__1|MC__UP);  // Configure Timer B0 to use ACLK, divide by 1, up mode
+	    TB0CTL  &= ~TBIE;                       // Explicitly Disable timer interrupts for safety
+
+	    // Now configure the timer period, which controls the PWM period
+	    // Doing this with a hard coded values is NOT the best method
+	    // We do it here only as an example. You will fix this in Lab 2.
+	    TB0CCR0   = note.pitch;                    // Set the PWM period in ACLK ticks
+	    TB0CCTL0 &= ~CCIE;                  // Disable timer interrupts
+
+	    // Configure CC register 5, which is connected to our PWM pin TB0.5
+	    TB0CCTL5  = OUTMOD_7;                   // Set/reset mode for PWM
+	    TB0CCTL5 &= ~CCIE;                      // Disable capture/compare interrupts
+	    TB0CCR5   = TB0CCR0/2;                  // Configure a 50% duty cycle
+
+	    timer_on = 1;
+	    runtimerA2();
+	    while(timer <= note.duration*100) {
+
+	    }
+	    timer_on = 0;
+	    stoptimerA2(1);
+	    BuzzerOff();
+	    current_note_index++;
+
+
+}
+void init_song() {
+	float f_por = 1 / 698.0;
+	unsigned int f_tick = (unsigned int)(f_por* 32768);
+	Note E = { f_tick,1};
+	Note D = {587,1};
+	Note C_note = {523,1};
+	Note Pause = {0,1};
+	Note F = {698,1};
+
+	song[0] = E;
+	song[1] = D;
+	song[2] = C_note;
+	song[3] = Pause;
+	song[4] = F;
+	song[5] = E;
+	song[6] = D;
 }
 #pragma vector=TIMER2_A0_VECTOR
 __interrupt void Timer_A2_ISR(void) {

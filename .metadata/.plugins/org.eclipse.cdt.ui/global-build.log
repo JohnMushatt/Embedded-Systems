@@ -11544,3 +11544,1330 @@ Finished building target: "Homework.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'guitarhero.obj' failed
+"..\guitarhero.h", line 12: fatal error #1965: cannot open source file "stlib.h"
+1 catastrophic error detected in the compilation of "../guitarhero.c".
+Compilation terminated.
+gmake: *** [guitarhero.obj] Error 1
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"..\guitarhero.h", line 12: fatal error #1965: cannot open source file "stlib.h"
+1 catastrophic error detected in the compilation of "../main.c".
+Compilation terminated.
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 72: warning #179-D: variable "mask" was declared but never referenced
+"../guitarhero.c", line 95: warning #225-D: function "setLeds" declared implicitly
+Finished building: "../guitarhero.c"
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 53: error #2631: Conversion u not allowed in printf_support=minimal mode
+"../main.c", line 55: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab1_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 53: error #2631: Conversion u not allowed in printf_support=minimal mode
+"../main.c", line 55: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab1_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 55: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../main.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 55: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../main.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 56: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../main.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 56: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../main.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 56: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../main.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 56: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../main.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'guitarhero.obj' failed
+"../guitarhero.c", line 72: warning #179-D: variable "mask" was declared but never referenced
+"../guitarhero.c", line 95: warning #225-D: function "setLeds" declared implicitly
+"../guitarhero.c", line 127: warning #225-D: function "Graphics_clearDisplay" declared implicitly
+"../guitarhero.c", line 127: error #20: identifier "g_sContext" is undefined
+"../guitarhero.c", line 137: warning #225-D: function "Graphics_drawString" declared implicitly
+"../guitarhero.c", line 138: error #20: identifier "AUTO_STRING_LENGTH" is undefined
+"../guitarhero.c", line 138: error #20: identifier "OPAQUE_TEXT" is undefined
+"../guitarhero.c", line 139: warning #225-D: function "Graphics_flushBuffer" declared implicitly
+"../guitarhero.c", line 145: error #66: expected a ";"
+4 errors detected in the compilation of "../guitarhero.c".
+gmake: *** [guitarhero.obj] Error 1
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 92: warning #189-D: use of "=" where "==" may have been intended
+"../main.c", line 105: error #29: expected an expression
+"../main.c", line 86: warning #552-D: variable "button" was set but never used
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab1_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'guitarhero.obj' failed
+"../guitarhero.c", line 72: warning #179-D: variable "mask" was declared but never referenced
+"../guitarhero.c", line 95: warning #225-D: function "setLeds" declared implicitly
+"../guitarhero.c", line 127: warning #225-D: function "Graphics_clearDisplay" declared implicitly
+"../guitarhero.c", line 127: error #20: identifier "g_sContext" is undefined
+"../guitarhero.c", line 137: warning #225-D: function "Graphics_drawString" declared implicitly
+"../guitarhero.c", line 138: error #20: identifier "AUTO_STRING_LENGTH" is undefined
+"../guitarhero.c", line 138: error #20: identifier "OPAQUE_TEXT" is undefined
+"../guitarhero.c", line 139: warning #225-D: function "Graphics_flushBuffer" declared implicitly
+3 errors detected in the compilation of "../guitarhero.c".
+gmake: *** [guitarhero.obj] Error 1
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 92: warning #189-D: use of "=" where "==" may have been intended
+"../main.c", line 105: error #29: expected an expression
+"../main.c", line 86: warning #552-D: variable "button" was set but never used
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab1_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'guitarhero.obj' failed
+"../guitarhero.c", line 72: warning #179-D: variable "mask" was declared but never referenced
+"../guitarhero.c", line 95: warning #225-D: function "setLeds" declared implicitly
+"../guitarhero.c", line 127: warning #225-D: function "Graphics_clearDisplay" declared implicitly
+"../guitarhero.c", line 127: error #20: identifier "g_sContext" is undefined
+"../guitarhero.c", line 137: warning #225-D: function "Graphics_drawString" declared implicitly
+"../guitarhero.c", line 138: error #20: identifier "AUTO_STRING_LENGTH" is undefined
+"../guitarhero.c", line 138: error #20: identifier "OPAQUE_TEXT" is undefined
+"../guitarhero.c", line 139: warning #225-D: function "Graphics_flushBuffer" declared implicitly
+3 errors detected in the compilation of "../guitarhero.c".
+gmake: *** [guitarhero.obj] Error 1
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 92: warning #189-D: use of "=" where "==" may have been intended
+"../main.c", line 105: error #29: expected an expression
+"../main.c", line 86: warning #552-D: variable "button" was set but never used
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab1_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'guitarhero.obj' failed
+"..\guitarhero.h", line 14: error #8: missing closing quote
+"..\guitarhero.h", line 14: error #171: expected a declaration
+"..\guitarhero.h", line 26: warning #12-D: parsing restarts here after previous syntax error
+"..\guitarhero.h", line 27: error #20: identifier "Note" is undefined
+"../guitarhero.c", line 72: warning #179-D: variable "mask" was declared but never referenced
+"../guitarhero.c", line 137: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+3 errors detected in the compilation of "../guitarhero.c".
+gmake: *** [guitarhero.obj] Error 1
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"..\guitarhero.h", line 14: error #8: missing closing quote
+"..\guitarhero.h", line 14: error #171: expected a declaration
+"..\guitarhero.h", line 26: warning #12-D: parsing restarts here after previous syntax error
+"..\guitarhero.h", line 27: error #20: identifier "Note" is undefined
+"../main.c", line 92: warning #189-D: use of "=" where "==" may have been intended
+"../main.c", line 105: error #29: expected an expression
+"../main.c", line 86: warning #552-D: variable "button" was set but never used
+4 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab1_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 72: warning #179-D: variable "mask" was declared but never referenced
+"../guitarhero.c", line 137: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../guitarhero.c"
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 92: warning #189-D: use of "=" where "==" may have been intended
+"../main.c", line 105: error #29: expected an expression
+"../main.c", line 86: warning #552-D: variable "button" was set but never used
+1 error detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab1_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 72: warning #179-D: variable "mask" was declared but never referenced
+"../guitarhero.c", line 137: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../guitarhero.c"
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 92: warning #189-D: use of "=" where "==" may have been intended
+"../main.c", line 86: warning #552-D: variable "button" was set but never used
+Finished building: "../main.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab1_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 137: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../guitarhero.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab1_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 137: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../guitarhero.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab1_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 138: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../guitarhero.c"
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+Finished building: "../main.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Clean-only build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k clean 
+ 
+DEL /F  "ece2049_demo_ccs91.hex"  "ece2049_demo_ccs91.out" 
+DEL /F "main.obj" "peripherals.obj" "LcdDriver\HAL_MSP_EXP430FR5529_Sharp96x96.obj" "LcdDriver\Sharp96x96.obj" "fonts\fontfixed6x8.obj" "images\LPRocket_96x37.obj" "images\TI_Logo_69x64.obj" 
+DEL /F "main.d" "peripherals.d" "LcdDriver\HAL_MSP_EXP430FR5529_Sharp96x96.d" "LcdDriver\Sharp96x96.d" "fonts\fontfixed6x8.d" "images\LPRocket_96x37.d" "images\TI_Logo_69x64.d" 
+Finished clean
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049_demo_ccs91" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 28: warning #179-D: variable "i" was declared but never referenced
+"../main.c", line 31: warning #179-D: variable "initial" was declared but never referenced
+Finished building: "../main.c"
+ 
+Building file: "../peripherals.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049_demo_ccs91" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="peripherals.d_raw"  "../peripherals.c"
+Finished building: "../peripherals.c"
+ 
+Building file: "../LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049_demo_ccs91" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.d_raw" --obj_directory="LcdDriver"  "../LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.c"
+Finished building: "../LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.c"
+ 
+Building file: "../LcdDriver/Sharp96x96.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049_demo_ccs91" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="LcdDriver/Sharp96x96.d_raw" --obj_directory="LcdDriver"  "../LcdDriver/Sharp96x96.c"
+Finished building: "../LcdDriver/Sharp96x96.c"
+ 
+Building file: "../fonts/fontfixed6x8.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049_demo_ccs91" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="fonts/fontfixed6x8.d_raw" --obj_directory="fonts"  "../fonts/fontfixed6x8.c"
+Finished building: "../fonts/fontfixed6x8.c"
+ 
+Building file: "../images/LPRocket_96x37.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049_demo_ccs91" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="images/LPRocket_96x37.d_raw" --obj_directory="images"  "../images/LPRocket_96x37.c"
+Finished building: "../images/LPRocket_96x37.c"
+ 
+Building file: "../images/TI_Logo_69x64.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049_demo_ccs91" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049_demo_ccs91/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="images/TI_Logo_69x64.d_raw" --obj_directory="images"  "../images/TI_Logo_69x64.c"
+Finished building: "../images/TI_Logo_69x64.c"
+ 
+Building target: "ece2049_demo_ccs91.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049_demo_ccs91.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049_demo_ccs91/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049_demo_ccs91_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049_demo_ccs91.out" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049_demo_ccs91.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 138: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../guitarhero.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 138: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../guitarhero.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 87: warning #552-D: variable "test_note_1" was set but never used
+"../main.c", line 92: warning #552-D: variable "test_note_2" was set but never used
+Finished building: "../main.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 92: warning #552-D: variable "test_note_2" was set but never used
+Finished building: "../main.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 92: warning #552-D: variable "test_note_2" was set but never used
+Finished building: "../main.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 138: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../guitarhero.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 138: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../guitarhero.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 92: warning #552-D: variable "test_note_2" was set but never used
+Finished building: "../main.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab1_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'guitarhero.obj' failed
+"../guitarhero.c", line 138: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../guitarhero.c", line 192: error #66: expected a ";"
+"../guitarhero.c", line 191: error #609: this pragma must immediately precede a declaration
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+"../guitarhero.c", line 189: warning #179-D: variable "e" was declared but never referenced
+At end of source: error #68: expected a "}"
+3 errors detected in the compilation of "../guitarhero.c".
+gmake: *** [guitarhero.obj] Error 1
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 87: warning #552-D: variable "test_note_1" was set but never used
+"../main.c", line 91: warning #552-D: variable "test_note_2" was set but never used
+Finished building: "../main.c"
+ 
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab1_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 138: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../guitarhero.c", line 189: warning #179-D: variable "e" was declared but never referenced
+Finished building: "../guitarhero.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'guitarhero.obj' failed
+"../guitarhero.c", line 138: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../guitarhero.c", line 191: error #41: expected an identifier
+"../guitarhero.c", line 192: warning #179-D: variable "Pause" was declared but never referenced
+"../guitarhero.c", line 193: warning #179-D: variable "F" was declared but never referenced
+1 error detected in the compilation of "../guitarhero.c".
+gmake: *** [guitarhero.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab1_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 138: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../guitarhero.c", line 191: warning #179-D: variable "C_note" was declared but never referenced
+"../guitarhero.c", line 192: warning #179-D: variable "Pause" was declared but never referenced
+"../guitarhero.c", line 193: warning #179-D: variable "F" was declared but never referenced
+Finished building: "../guitarhero.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab1_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 138: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../guitarhero.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 138: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../guitarhero.c"
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 87: warning #552-D: variable "test_note_1" was set but never used
+"../main.c", line 91: warning #552-D: variable "test_note_2" was set but never used
+Finished building: "../main.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+error #10056: symbol "current_note_index" redefined: first defined in
+   "./guitarhero.obj"; redefined in "./main.obj"
+error #10010: errors encountered during linking;
+   "ece2049c20_lab2_jemushatt_ssaif.out" not built
+ 
+>> Compilation failure
+makefile:157: recipe for target 'ece2049c20_lab2_jemushatt_ssaif.out' failed
+gmake: *** [ece2049c20_lab2_jemushatt_ssaif.out] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab1_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+error #10056: symbol "current_note_index" redefined: first defined in
+   "./guitarhero.obj"; redefined in "./main.obj"
+error #10010: errors encountered during linking;
+   "ece2049c20_lab2_jemushatt_ssaif.out" not built
+ 
+>> Compilation failure
+makefile:157: recipe for target 'ece2049c20_lab2_jemushatt_ssaif.out' failed
+gmake: *** [ece2049c20_lab2_jemushatt_ssaif.out] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049_demo_ccs91 ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab1_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 139: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../guitarhero.c"
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 87: warning #552-D: variable "test_note_1" was set but never used
+"../main.c", line 91: warning #552-D: variable "test_note_2" was set but never used
+Finished building: "../main.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+gmake: Nothing to be done for 'all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 139: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../guitarhero.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 139: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../guitarhero.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 139: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../guitarhero.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 139: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../guitarhero.c", line 191: warning #179-D: variable "f_tick" was declared but never referenced
+Finished building: "../guitarhero.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 139: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../guitarhero.c", line 191: warning #179-D: variable "f_tick" was declared but never referenced
+Finished building: "../guitarhero.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 139: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+"../guitarhero.c", line 192: warning #179-D: variable "f_tick" was declared but never referenced
+Finished building: "../guitarhero.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project ece2049c20_lab2_jemushatt_ssaif ****
+
+"C:\\ti\\ccs910\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../guitarhero.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs910/ccs/ccs_base/msp430/include" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif" --include_path="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/grlib" --include_path="C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="guitarhero.d_raw"  "../guitarhero.c"
+"../guitarhero.c", line 139: warning #169-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+Finished building: "../guitarhero.c"
+ 
+Building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/bin/cl430" -vmspx --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power_severity=suppress --define=__MSP430F5529__ -g --gcc --printf_support=minimal --diag_warning=225 --display_error_number --abi=eabi --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU23 --silicon_errata=CPU40 -z -m"ece2049c20_lab2_jemushatt_ssaif.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs910/ccs/ccs_base/msp430/include" -i"C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/lib" -i"C:/ti/ccs910/ccs/tools/compiler/ti-cgt-msp430_18.12.2.LTS/include" -i"C:/ti/ccs910/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" --reread_libs --warn_sections --xml_link_info="ece2049c20_lab2_jemushatt_ssaif_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "ece2049c20_lab2_jemushatt_ssaif.out" "./guitarhero.obj" "./main.obj" "./peripherals.obj" "./LcdDriver/HAL_MSP_EXP430FR5529_Sharp96x96.obj" "./LcdDriver/Sharp96x96.obj" "./fonts/fontfixed6x8.obj" "./images/LPRocket_96x37.obj" "./images/TI_Logo_69x64.obj" "../lnk_msp430f5529.cmd" "../lib/grlib.lib"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "ece2049c20_lab2_jemushatt_ssaif.out"
+ 
+
+**** Build Finished ****
