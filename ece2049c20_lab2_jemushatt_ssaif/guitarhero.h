@@ -13,39 +13,39 @@
 #include "peripherals.h"
 
 /**
- * 4 byte structure
+ * 6 byte structure
  * 2 bytes for pitch b/c 16-bit unsigned int is 16/8 =2  bytes
- * 2 bytes for duration b/c 16-bit unsigned int is 16/8 =2  bytes
+ * 4 bytes for duration b/c 32-bit is 4 bytes
  * maybe some additional padding
  */
 typedef struct _Note {
 	unsigned int pitch; // 2 bytes
-	unsigned int duration; // 2 bytes
+
+	float duration; // 4 bytes
+
+	unsigned int led; //2 BytesBIT0
 } Note;
-Note song[100];
+Note song[200];
 unsigned int current_note_index;
 unsigned int timer;
+unsigned int elasped_time;
+int play_notes;
+int play_note_now;
 int timer_on;
 unsigned int leap_cnt;
-
+int score;
 int game_started;
-/**
- *  8 + N*5 byte structure
- *  8 Bytes for pointer to array of notes
- *  N*5 bytes for N notes in the array
- */
-/*
-typedef struct _Song {
-	Note *Notes;
 
-} Song;
-*/
+
 /*
  * Game logic
  */
 
+int score_note(unsigned int button);
+
 void start_game();
 void init_song();
+unsigned int convert_freq(float freq);
 void play_note(Note note);
 void runtimerA2(void);
 void stoptimerA2(int reset);

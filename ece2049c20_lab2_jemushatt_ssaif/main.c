@@ -20,6 +20,8 @@ void swDelay(char numLoops);
 void main(void)
 
 {
+	//BuzzerOn();
+
 	WDTCTL = WDTPW | WDTHOLD; // Stop watchdog timer. Always need to stop this!!
 							  // You can then configure it properly, if desired
 	_BIS_SR(GIE);
@@ -32,88 +34,44 @@ void main(void)
 	// *** Intro Screen ***
 	Graphics_clearDisplay(&g_sContext); // Clear the display
 
-	// We are now done writing to the display.  However, if we stopped here, we would not
-	// see any changes on the actual LCD.  This is because we need to send our changes
-	// to the LCD, which then refreshes the display.
-	// Since this is a slow operation, it is best to refresh (or "flush") only after
-	// we are done drawing everything we need.
 	Graphics_drawStringCentered(&g_sContext, "Welcome", AUTO_STRING_LENGTH, 48,
 			15, TRANSPARENT_TEXT);
 	Graphics_flushBuffer(&g_sContext);
-	//Graphics_clearDisplay(&g_sContext);
-	/*
-	 Graphics_drawStringCentered(&g_sContext, "Time start", AUTO_STRING_LENGTH,
-	 30, 30,
-	 TRANSPARENT_TEXT);
-	 Graphics_flushBuffer(&g_sContext);
 
-	 timer_on = 1;
-	 runtimerA2();
-	 char timer_as_string[10];
-	 while (timer <= 200) {
-	 if (timer % 100 == 0) {
-	 sprintf(timer_as_string, "%d", timer / 100);
-	 Graphics_clearDisplay(&g_sContext);
-	 Graphics_drawString(&g_sContext, timer_as_string,
-	 AUTO_STRING_LENGTH, 30, 30,
-	 OPAQUE_TEXT);
-	 Graphics_flushBuffer(&g_sContext);
-	 }
-	 }
-
-	 stoptimerA2(1);
-	 Graphics_clearDisplay(&g_sContext);
-	 Graphics_drawString(&g_sContext, "Timer Over!",
-
-	 AUTO_STRING_LENGTH, 30, 30,
-	 OPAQUE_TEXT);
-	 Graphics_flushBuffer(&g_sContext);
-	 unsigned char dispThree[3];
-	 dispThree[0] = ' ';
-	 dispThree[2] = ' ';
-	 char test = BIT0 | BIT1;
-	 configUserLED(test);
-	 swDelay(2);
-	 test = BIT1;
-	 configUserLED(test);
-	 swDelay(2);
-
-	 test = BIT0;
-	 configUserLED(test);
-	 swDelay(2);
-	 setLeds(0);
-	 */
 	unsigned char button;
-	Note test_note_1;
-	test_note_1.duration = 2;
-	test_note_1.pitch = 200;
 
-	Note test_note_2;
-	test_note_2.duration = 1;
-	test_note_2.pitch = 50;
 	init_song();
+	char current_score[3];
+	unsigned int selector_buttons;
 	while (1)    // Forever loop
 	{
 
 		button = getKey();
+		selector_buttons = get_pressed_button_hex();
 		if (button == '*') {
+			sprintf(current_score, "%d",0);
 			start_game();
-			/*
-			 dispThree[1] = button;
+
+			 //dispThree[1] = button;
 
 			 Graphics_clearDisplay(&g_sContext);
-			 Graphics_drawStringCentered(&g_sContext, dispThree, 3, 30, 30,
+			 Graphics_drawStringCentered(&g_sContext, "Current Score",AUTO_STRING_LENGTH, 50, 30,
 			 TRANSPARENT_TEXT);
+			 Graphics_drawStringCentered(&g_sContext,current_score ,AUTO_STRING_LENGTH, 50, 50,
+						 TRANSPARENT_TEXT);
 			 Graphics_flushBuffer(&g_sContext);
-			 */
+
 		}
 		if (game_started) {
-			if (current_note_index <= 6) {
-				play_note(song[current_note_index]);
+
+			play_notes = 1;
+			if (selector_buttons != 0) {
+				score_note(selector_buttons);
 			}
 		}
+
 		//unsigned char val = get_pressed_button_hex();
-		//configLabBoardLED((char) val);
+		//configLabBoardLED((char) selector_buttons);
 		//configUserLED(val);
 	}  // end while (1)
 }

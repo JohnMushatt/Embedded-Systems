@@ -4,4 +4,5 @@
 	<deviceFamily value="MSP430"/>
 	<connection value="common/targetdb/connections/TIMSP430-USB.xml"/>
 	<isTargetManual value="false"/>
+	<origin value="C:/Users/johnm/Desktop/Embedded-Systems/ece2049c20_lab2_jemushatt_ssaif"/>
 </projectOptions>
